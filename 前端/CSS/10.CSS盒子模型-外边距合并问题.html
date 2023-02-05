@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .one {
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+            margin-bottom: 20px;
+        }
+        .two {
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin-top: 30px;
+            /* 
+                块标签
+                由于浏览器的特性，浏览器默认取margin的最大值，则盒子间距为30px
+                垂直方向盒子的外边距合并问题 
+            */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="one">qwe</div>
+    <div class="two">123</div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 选择属于其父元素的首个子元素的每个该素，并为其设置样式 */
+        /* 子元素，必须是第一个子元素，子元素的标签类型 */
+        /* li:first-child{
+            color: pink;
+        } */
+
+        /* 匹配父元素的最后一个子元素 */
+        /* li:last-child{
+            color: pink;
+        } */
+
+        /* 从上往下数，匹配父元素的任意一个该元素，由括号的数字决定 */
+        /* 从上往下数，是子元素，是第几个子元素，子元素的标签类型 */
+        div:nth-child(1){
+            color: red;
+        }
+
+        /* 从下往上数，匹配父元素的任意一个子元素，由括号的数字决定 */
+        /* li:nth-last-child(9){
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+    <ul>
+        <div>2</div>
+        <li>li1</li>
+        <li>li2</li>
+        <li>li3</li>
+        <li>li4</li>
+        <li>li5</li>
+        <li>li6</li>
+        <li>li7</li>
+        <li>li8</li>
+    </ul>
+</body>
+</html>

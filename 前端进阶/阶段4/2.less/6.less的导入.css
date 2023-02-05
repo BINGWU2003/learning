@@ -1,0 +1,20 @@
+.father {
+  color: red;
+  width: 5rem;
+  height: 2rem;
+}
+.father .son {
+  background-color: pink;
+}
+.father {
+  width: 100px;
+  width: 30px;
+  width: 25px;
+  width: 12.5px;
+}
+.father {
+  background-color: pink;
+}
+.box {
+  color: pink;
+}

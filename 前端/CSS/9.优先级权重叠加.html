@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* (0,0,0,2) */
+        div p{
+            color: red;
+        }
+
+        /* (0,0,0,2) */
+        /* 出现覆盖，子代p为brown */
+        div>p{
+            color: brown;
+        }
+
+        /* (0,1,1,0) */
+        /* 该复合选择器权重最大，则生效 */
+        #color.blue{
+            color: blue;
+        }
+
+        /* (0,0,2,0) */
+        .color.blue{
+
+            /* 使该选择器权重最高 */
+            color: aqua !important;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- 处理复合选择器和非复合选择器的权重问题（即在多个复合选择器中选一个） -->
+    <!-- 复合选择器是由两个或多个基础选择器，通过不同的方式组合而成的 -->
+    <!-- 子代，后代，并集，交集，伪类选择器 -->
+
+    <!-- 通过复合选择器中的各个选择器个数来判断 -->
+    <!-- （行内式个数，id个数，类个数，标签个数） -->
+    <!-- ！important如果不是继承，则优先级最高 -->
+
+    <div>
+        <p>p标签</p>
+        <h1>
+            h1标签
+            <p id="color" class="blue color">
+                p的第二个标签
+            </p>
+        </h1>
+    </div>
+</body>
+</html>

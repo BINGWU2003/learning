@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 当不确定传递的参数的个数，可以用arguments来获取。arguments是函数的一个内置对象，arguments对象中储存了传递的所有实参
+        function fu() {
+            console.log(arguments); // 接受传递过来的实参
+            console.log(arguments.length);
+            console.log(arguments[2]);
+            //遍历arguments
+            for (var i = 0; i <= arguments.length; i++) {
+                console.log(arguments[i]);
+            }
+        }
+        fu(1, 2, 'aaa', 777);
+        //arguments 相当于一个伪数组
+        // 1.有length属性
+        // 2.按照索引的方式存储
+        // 3.数组的push(),pop()等方法不能用
+
+        function sort(arr) {
+            var temp;
+            for (var i = 1; i <= arr.length; i++) { //控制要判断的数的总个数
+                for (var j = 0; j <= arr.length - i - 1; j++) {
+                    if (arr[j] < arr[j + 1]) {
+                        temp = arr[j + 1];
+                        arr[j + 1] = arr[j];
+                        arr[j] = temp;
+                    }
+                }
+            }
+            return arr;
+        }
+        console.log((sort([1,5,7,4,5])));
+
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

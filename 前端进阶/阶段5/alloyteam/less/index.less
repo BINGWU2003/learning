@@ -1,0 +1,66 @@
+//导航栏
+.navbar-default {
+    background-color: transparent;
+    border: 0;
+    .container {
+        padding-top: 10px;
+    }
+    .collapse.navbar-collapse {
+        padding-top: 20px;
+        ul {
+            li {
+                a {
+                    color: aliceblue!important;
+                    img {
+                        margin-bottom: 4px;
+                        height: 16px;
+                    }
+                }
+                &:hover a{
+                    color: chocolate!important;
+                }
+            }
+        }
+    }
+}
+
+
+
+//banner
+.carousel-inner {
+    //视口<768px,图片高度250，max-width
+    //视口<992,大于768，图片高度为400，max-width
+    //视口大于992，图片高度500，min-width
+
+    //图片高度自适应父级高度
+    img {
+        height: 100%!important;
+        //height:auto,高度由自身的内容撑开
+    }
+    @media (max-width:992px) {
+        .item {
+            height: 400px;
+        }
+    }
+    @media (max-width:768px) {
+        .item {
+            height: 250px;
+        }
+    }
+    @media (min-width:992px) {
+        .item {
+            height: 500px;
+        }
+    }
+}
+
+
+//content
+.content {
+    padding-top: 30px;
+    text-align: center;
+    a {
+        display: block;
+        background-color: pink;
+    }
+}

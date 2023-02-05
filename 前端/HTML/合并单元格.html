@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <table border="1">
+            <caption><strong>成绩单</strong></caption>
+            <thead>
+                <tr>
+                    <th>姓名</th>
+                    <th>数学</th>
+                    <th>语文</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>a</td>
+                    <!-- rowspan合并行，=右边的数字控制合并的单元格的数目 -->
+                    <!-- 合并原则为左上原则 -->
+                    <!-- 注意：只能合并同结构中的内容，不能跨结构（表的结构）合并 -->
+                    <td rowspan="2">100</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>b</td>
+                    <td>1</td>
+                    <td>10</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td>评语</td>
+                <!-- colspan合并列 -->
+                <td colspan="2">好</td>
+            </tfoot>
+        </table>
+    </body>
+</html>

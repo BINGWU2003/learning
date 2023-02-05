@@ -1,0 +1,46 @@
+.navbar-default {
+  background-color: transparent;
+  border: 0;
+}
+.navbar-default .container {
+  padding-top: 10px;
+}
+.navbar-default .collapse.navbar-collapse {
+  padding-top: 20px;
+}
+.navbar-default .collapse.navbar-collapse ul li a {
+  color: aliceblue!important;
+}
+.navbar-default .collapse.navbar-collapse ul li a img {
+  margin-bottom: 4px;
+  height: 16px;
+}
+.navbar-default .collapse.navbar-collapse ul li:hover a {
+  color: chocolate!important;
+}
+.carousel-inner img {
+  height: 100%!important;
+}
+@media (max-width: 992px) {
+  .carousel-inner .item {
+    height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-inner .item {
+    height: 250px;
+  }
+}
+@media (min-width: 992px) {
+  .carousel-inner .item {
+    height: 500px;
+  }
+}
+.content {
+  padding-top: 30px;
+  text-align: center;
+}
+.content a {
+  display: block;
+  background-color: pink;
+}

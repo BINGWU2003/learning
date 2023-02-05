@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+        }
+        .one{
+            position: relative;
+            left: 20px;
+            top: 30px;
+            background-color: red;
+            z-index: 1;
+        }
+        .two{
+            position: absolute;
+            top: 30px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        元素显示层级：标准<浮动<定位
+    -->
+    <!-- 
+        当盒子都是定位时，后来者居上
+        添加z-index可以改变，z-index的默认值是0,z-index的取值为整数
+        设置元素的堆叠顺序。拥有更高堆叠顺序的元素总是会处于堆叠顺序较低的元素的前面。
+        z-index必须配合positon使用，否则不生效
+    -->
+    <div class="one">1</div>
+    <div class="two">w</div>
+    
+</body>
+</html>

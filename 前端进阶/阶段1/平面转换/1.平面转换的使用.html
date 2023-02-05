@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>位移-基本使用</title>
+    <style>
+        .father {
+            width: 500px;
+            height: 300px;
+            margin: 100px auto;
+            border: 1px solid #000;
+        }
+        
+        .son {
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            transition: all 0.5s;
+        }
+    
+        /* 鼠标悬停到父盒子，son改变位置 */
+        /* 鼠标悬停在父级引起子级的变化 */
+        .father:hover .son {
+            /* transform: translate(100px, 50px); */
+
+            /* 百分比: 盒子自身尺寸的百分比 */
+            /* x:正数：水平往右，负数：水平往左 */
+            /* y:正数：垂直向下，负数：垂直向上 */
+            transform: translate(100%, 50%);
+
+            /* transform: translate(-100%, 10px); */
+
+            /* 只给出一个值表示x轴移动距离 */
+            /* transform: translate(100px); */
+
+            /* transform: translateY(100px); */
+
+            /* transform: translateX(100px); */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 平面转换：改变盒子在在平面中的位置（位移，缩放，旋转） -->
+    <!-- 属性：transform -->
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

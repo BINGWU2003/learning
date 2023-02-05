@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 浮动的影响 */
+        /* 当父级元素的子元素全部浮动而且父级元素的高不存在时，父元素的同级元素会向上移动 */
+        /* 清除该影响：单伪元素(和额外标签法类似) */
+        .box {
+            margin: 0 auto;
+            width: 700px;
+            background-color: red;
+        }
+        .left {
+            /* 转化成行内块或者浮动都行 */
+            float: left;
+            height: 200px;
+            width: 300px;
+            background-color: pink;
+        }
+        .right {
+            float: right;
+            height: 200px;
+            width: 390px;
+            background-color: green;
+        }
+        .bottom {
+            height: 100px;
+            background-color: skyblue;
+        }
+        /* 单伪元素 */
+        .clearfix::after {
+            content: "";
+            /* 伪元素默认行内 */
+            display: block;
+            clear: both;
+            /* 解决兼容性问题 */
+            /* 让块标签不可见 */
+            height: 0;
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="box clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="bottom"></div>
+</body>
+</html>

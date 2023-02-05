@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box {
+            width: 1366px;
+            height: 600px;
+            margin: 0 auto;
+            background: url('./images/bg.jpg');
+
+            /* 溢出父级的部分隐藏 */
+            overflow: hidden;
+        }
+        .box::after,
+        .box::before {
+            float: left;
+            content: '';
+            height: 600px;
+            width: 50%;
+            background-image: url(./images/fm.jpg);
+            /* 添加过度效果 */
+            transition: all 1s;
+        }
+        .box::after {
+            /* right:取盒子右半部分 */
+            background-position: right 0px;
+        }
+        /* 鼠标悬停在父级，引起子级的变换 */
+        .box:hover::after {
+            transform: translate(100%);
+        }
+        .box:hover::before {
+            transform: translateX(-100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+    </div>
+</body>
+
+</html>

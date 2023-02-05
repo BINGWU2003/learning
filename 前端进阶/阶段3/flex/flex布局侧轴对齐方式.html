@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* flex侧轴：垂直方向 */
+        .box {
+            /* 添加flex */
+            display: flex;
+            flex-wrap: wrap;
+            /* 侧轴对齐方式 */
+            /* 垂直居中 */
+            /* align-content: space-around; */
+
+            align-content: space-between;
+            
+            /* 拉伸（默认值）,当弹性盒子没设置高度时，弹性盒子的高度等于弹性容器的高度 */
+            /* align-items: stretch; */
+
+
+            height: 400px;
+            width: 400px;
+            border: 1px solid black;
+
+        }
+        .inner {
+
+            height: 100px;
+            width: 150px;
+            background-color: pink;
+        }
+
+        /* 单独控制某一个弹性盒子的侧轴对齐方式 */
+        /* 第二个弹性盒子垂直居中 */
+        .box div:nth-child(2){
+            align-self: center;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="inner">11111</div>
+        <!-- 第二个盒子因为设置了垂直居中，覆盖了stretch属性值，导致无法被拉伸 -->
+        <div class="inner">2</div>
+        <div class="inner">3</div>
+    </div>
+</body>
+</html>

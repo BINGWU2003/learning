@@ -1,0 +1,50 @@
+//父选择器嵌套子选择器
+.father {
+    background-color: red;
+    .son {
+        background-color: pink;
+    }
+}
+
+/*
+.father {
+    background-color: red;
+}
+.father .son {
+    background-color: pink;
+}
+*/
+
+
+//  &  表示当前选择器
+.father {
+    background-color: red;
+    .son {
+        color: pink;
+        &:hover {
+            height: 20px;
+        }
+    }
+    &:hover {
+        width: 10px;
+    }
+}
+
+
+/*
+.father {
+    background-color: red;
+    }
+    .father .son {
+    color: pink;
+    }
+
+
+.father .son:hover {
+    height: 20px;
+    }
+    
+.father:hover {
+    width: 10px;
+    }
+*/

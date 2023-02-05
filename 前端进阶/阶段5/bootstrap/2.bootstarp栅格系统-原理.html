@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入bootstrap文件 -->
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <style>
+        .container div{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- bootstrap默认将网页分成12等份 -->
+    <!--               超小屏幕    小屏幕     中等屏幕     大屏幕
+        响应断点：      <768px     >=768px    >=992px     >=1200px
+        类前缀：    col-xs-*        col-sm-*  col-md-*    col-lg-*  
+                  *  代表要占用的份数
+        列数：     12                12        12        12
+    -->
+    <!-- 大屏幕一行排四个内容，中屏幕一行排2个内容 -->
+    <div class="container">
+        <div class="col-lg-3 col-md-6">1</div>
+        <div class="col-lg-3 col-md-6">1</div>
+        <div class="col-lg-3 col-md-6">1</div>
+        <div class="col-lg-3 col-md-6">1</div>
+    </div>
+
+        <!-- 中等，大屏幕中一行排4个 -->
+    <div class="container">
+        <div class="col-md-3">2</div>
+        <div class="col-md-3">2</div>
+        <div class="col-md-3">2</div>
+        <div class="col-md-3">2</div>
+    </div>
+    <!-- 大屏幕一行排2个内容，中屏幕一行排4个内容 -->
+    <div class="container">
+        <div class="col-lg-6 col-md-3">3</div>
+        <div class="col-lg-6 col-md-3">3</div>
+        <div class="col-lg-6 col-md-3">3</div>
+        <div class="col-lg-6 col-md-3">3</div>
+    </div>
+</body>
+</html>

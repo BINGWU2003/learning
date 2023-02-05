@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            /* 绝对定位的盒子使用margin auto不会居中 */
+            position: absolute;
+            /* 盒子左边界和浏览器窗口的最中间对齐 */
+            left: 50%;
+            /* 让盒子向左移动本身wdith的一半，能让盒子水平方向居中 */
+            /* margin-left: -100px; */
+            top: 50%;
+            /* margin-top: -100px; */
+            /* 取代margin-left，right*/
+            transform: translate(-50%,-50%);
+            height: 201px;
+            width: 201px;
+            background-color: pink;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

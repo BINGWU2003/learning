@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /* 盒子大小为当前单个小精灵图大小 */
+        .box {
+            height: 140px;
+            width: 140px;
+            border: 1px solid black;
+            background-image: url(../images/bg.png);
+            animation: 
+            0.8s move infinite steps(12),
+            5s run forwards;
+            /* 速度曲线steps(N) */
+            /* 12为精灵图的所有小精灵图个数 */
+        }
+
+        @keyframes move {
+            /* 如果动画的开始状态和和盒子样式一样，则可以省去from */
+            /* from {
+                background-position: 0 0;
+            } */
+            to {
+                background-position: -1680px 0;
+            }
+        }
+        @keyframes run {
+            /* from {
+                transform: translate(0);
+            } */
+            to {
+                transform: translate(800px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+@import url(./base.less);
+@import url(./normalize.less);
+
+//版心
+.warpper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.nav {
+    background-color:#333;
+    height: 52px;
+    li {
+        float: right;
+        width: 88px;
+        height: 16px;
+        margin-top: 16px;
+        border-right: 1px solid #666666;
+        text-align: center;
+        line-height: 16px;
+        a {
+            color: #dcdcdc;
+            font-size: 14px;
+            span {
+                display: inline-block;
+                height: 16px;
+                width: 12px;
+                margin-right: 3px;
+                margin-bottom: 4px;
+                background-image: url(../images/sprites.png);
+                background-position: -159px -70px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.header {
+    height: 130px;
+    h1 {
+        float: left;
+        a {
+            display: inline-block;
+            width: 208px;
+            height: 70px;
+            background-image: url(../images/logo.png);
+            background-size: contain;
+        }
+    }
+    .select_nav {
+        float: left;
+        padding-top: 54px;
+        margin-left: 38px;
+        ul {
+            li {
+                float: left;
+                width: 32px;
+                margin: 0 22px;
+                a {
+                    color: #333333;
+                }
+                &:hover {
+                    padding-bottom: 4px;
+                    border-bottom: 2px solid #27ba9b;;
+                    a {
+                        color: #27ba9b!important;
+                    }
+                }
+            }
+        }
+    }
+    .right {
+        float: right;
+        padding-top: 48px;
+        .search {
+            position: relative;
+            display: inline-block;
+            .search_pic {
+                position: absolute;
+                height: 18px;
+                width: 18px;
+                left: -25px;
+                top: 4px;
+                background-image: url(../images/sprites.png);
+                background-position: -80px -70px;
+                vertical-align: center;
+            }
+        }
+        a {
+            position: relative;
+            .shopCar_pic {
+                position: absolute;
+                height: 24px;
+                width: 24px;
+                top: -4px;
+                left: 4px;
+                background-image: url(../images/sprites.png);
+                background-position: -120px -70px;
+            }
+        }
+    }
+}

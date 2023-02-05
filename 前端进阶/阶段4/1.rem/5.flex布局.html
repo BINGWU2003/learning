@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @media (width:375px) {
+            html {
+                font-size: 37.5px;
+            }
+        }
+
+        @media (width:414px) {
+            html {
+                font-size: 41.4px;
+            }
+        } */
+
+        
+        .box {
+            /* 
+            一般来说，设计稿的宽度是375px，盒子的宽高参考设计稿的来写
+            字体大小：37.5px
+            设计稿里的盒子宽x高：68px  36px
+            则rem大小为：68/37.5rem   36/37.5rem
+            */
+            width: 1.813rem;
+            height: 0.96rem;
+            background-color: pink;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div class="box">
+
+    </div>
+
+    <!-- 引入js文件，省去media -->
+    <script src="../js/flexible.js"></script>
+</body>
+</html>

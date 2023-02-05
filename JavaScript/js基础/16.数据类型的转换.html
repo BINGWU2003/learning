@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //数据类型转换
+        //1.number->string
+        //变量.toString()
+        var num1 = 10;
+        console.log(typeof num1.toString());
+        console.log(typeof num1);
+        //String(变量)
+        console.log(typeof String(num1));
+        console.log(typeof num1);
+        //拼接法  隐式转换
+        console.log(num1+'');
+        //2.string->number
+        //parsenInt(变量);  得到的是整数
+        var str = prompt("输入");
+        console.log(parseInt(str));
+        //只整数部分
+        console.log(parseInt(3.9));
+        //parseInt() 执行时，从左往右读，遇到字符就停止读取
+        console.log(parseInt('120pp'));//120
+        console.log(parseInt('aa120pp'));
+        //使用Number()
+        console.log(Number('123'));
+        //隐式转换 利用- * /
+        console.log('123'-'321');
+        console.log('123'-0);
+        console.log('123'*2);
+        console.log('123'/2);
+        //3.string->float
+        //paresFloat(变量)  得到小数
+        console.log(parseFloat('3.14'));
+        console.log(parseFloat('130pp'));//130
+        console.log(parseFloat('aa130pp'));
+        //
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

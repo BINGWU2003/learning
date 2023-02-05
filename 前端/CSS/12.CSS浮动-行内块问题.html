@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 200px;
+            width: 200px;
+            /* 转换成行内块 */
+            display: inline-block;
+        }
+        .one {
+            background-color: pink;
+        }
+        .two {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 当行内块元素位于上下两行时，行内块元素的盒子之间会产生缝隙，并不会紧靠在一起 -->
+    <div class="one">div1</div>
+    <div class="two">div2</div>
+</body>
+</html>

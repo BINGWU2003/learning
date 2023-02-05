@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            /* 增加透视属性 */
+            /* 透视属性加给父级 */
+            /* 推荐取值：800-1200px */
+            /* 近大远小 */
+            /* 
+                原理：该属性取值大小代表人眼到屏幕的习惯距离，
+                transform的Z轴取值代表盒子相对于屏幕所移动的距离
+            */
+            perspective: 1000px;
+        }
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            margin: 20px auto;
+            transition: all 0.5s;
+        }
+        .box:hover {
+            /* 空间转换属性 */
+            /* z轴的效果要加其他属性才能生效 */
+            transform: translate3d(100px,200px,500px);
+            /* 
+            单独控制z轴
+            transform: translateZ(100px);
+            */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

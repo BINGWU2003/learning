@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one {
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            /* 浮动该盒子， 该盒子下面的盒子往上移动，占用之前的盒子的位，之前的盒子也会覆盖下面的盒子，但下面的盒子的内容不被覆盖*/
+            /* 被浮动的标签具有行内块的特点 */
+            float: left;
+            /* 浮动后的标签的margin：0 auto,text-alient:center不生效 */
+            margin: 0 auto;
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+        .two {
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+            float: left;
+        }
+        .three {
+            height: 150px;
+            width: 150px;
+            background-color: skyblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="one">one</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+    <h1 style="text-align: center;">111</h1>
+</body>
+</html>

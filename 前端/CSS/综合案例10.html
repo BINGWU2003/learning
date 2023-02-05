@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .banner{
+            position: relative;
+            height: 720px;
+            width: 1280px;
+            margin: 0 auto;        
+        }
+        .mask {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            /* 当有absolute属性，盒子显示模式为行内，如果不加宽高，盒子相当于不存在 */
+            height: 200px;
+            /* width: 1280px; */
+            /* 当子级的宽度和父级一样，可以给width赋100% */
+            width: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img src="../imge/cod.jpg" alt="">
+        <div class="mask">CODM</div>
+    </div>
+</body>
+</html>

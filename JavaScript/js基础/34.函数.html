@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 声明函数
+        /* function 函数名() {
+            函数体
+        } */
+
+        /* var 变量名 = function() {
+            // 函数体
+        } */
+
+        //带参
+        /* function 函数名(形参1，形参2， ....) {
+            函数体
+        } */
+        function sum(num1, num2) {
+            var sum1 = num1 + num2;
+            console.log(sum1);
+        }
+
+        //匿名函数  相当于变量里面存函数
+        var f = function () {
+            console.log('f');
+        }
+        f(); // 调用
+
+        // 调用函数   不带参：函数名();   带参：函数名(实参1，实参2); 
+        sum(1, 2);
+        // 形参和实参个数不匹配问题
+        sum(2, 3);
+        sum(2, 3, 4); // 多出来的参数不接收
+        // 形参默认为undefined
+        sum(2); // 未接收参数的形参为undifined ，输出结果为NaN
+        // 返回值  return
+        // 函数名() == return的返回值  只能返回一个值
+        function test(num1, num2) {
+            return num1, num2;
+        }
+        console.log(test(1, 2)); // 返回最后一个值
+        // 函数遇到return就终止函数
+        function getResult() {
+            return 'abcd';
+            console.log('不执行');
+        }
+        console.log(getResult()); // abcd
+        // 返回一个数组
+        function get(num1, num2) {
+            return [num1 + num2, num1 / num2];
+        }
+        console.log(get(1, 2));
+        // 函数没有返回值，则返回undefined
+        function fun() {
+            ;
+        }
+        console.log(fun()); // undefined
+        //函数调用函数
+        function f1() {
+            console.log('f1');
+            f2(); // 调用f2()
+        }
+
+        function f2() {
+            console.log('f2');
+        }
+        f1();
+
+        //
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

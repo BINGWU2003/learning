@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            margin: 20px auto;
+            transition: all 0.5s;
+        }
+        .box:hover {
+            /* 空间转换属性 */
+            /* z轴的效果要加其他属性才能生效 */
+            transform: translate3d(100px,200px,100px);
+            /* 
+            单独控制z轴
+            transform: translateZ(100px);
+            */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

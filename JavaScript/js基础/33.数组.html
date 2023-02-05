@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //利用new创建数组
+        var arr = new Array(); // 空数组
+        //利用字面量创建数组
+        var arr1 = []; // 空数组
+        var arr2 = [1, 2, 3, 'pink', true]; // 数组里可以放任何数据类型，用逗号隔开
+        // 访问数组元素
+        console.log(arr2);
+        // 1.通过下标访问，下标从0开始   格式：数组名[下标]
+        console.log(arr2[3]); // pink
+        console.log(arr2[7]); // undifined  越界访问
+        // 2.遍历数组
+        for (var i = 0; i <= 4; i++) {
+            console.log(arr2[i]);
+        }
+        // 3.获取数组长度 数组名.length
+        console.log(arr2.length);
+        console.log(arr.length);
+        // 4.扩容数组
+        var arr3 = [1, 2, 3, 4];
+        arr3.length = 7; // 修改length，来扩容数组
+        console.log(arr3);
+        //
+        var arr4 = ['aa', 'cc', 11];
+        // 直接追加数组元素，来扩容数组
+        arr4[4] = 5;
+        console.log(arr4);
+        // 直接覆盖数组里的元素
+        arr4 = 'qwer';
+        console.log(arr4);
+        //数组给数组赋值
+        var arr1 = [1,23,4];
+        var arr2 = arr1;
+        console.log(arr2);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

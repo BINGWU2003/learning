@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function coutDown(time) {
+            var nowTime = +new Date(); // 返回当前时间距离1970-1-1的毫秒数
+            var inputTime = +new Date(time); // 返回用户输入时间距离1970-1-1的毫秒数
+            var times = (inputTime - nowTime) / 1000; // 剩余时间秒数
+            var day = parseInt(times / 60 / 60 / 24);
+            day = day < 10 ? '0' + day : day;
+            var hour = parseInt(times / 60 / 60 % 24);
+            hour = hour < 10 ? '0' + hour : hour;
+            var minutes = parseInt(times / 60 % 60);
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+            var seconds = parseInt(times % 60);
+            seconds = seconds < 10 ? seconds + '0' : seconds;
+            return day + '天' + hour + '时' + minutes + '分' + seconds + '秒';
+        }
+        console.log(coutDown('2023-2-3 22:00:00'));
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

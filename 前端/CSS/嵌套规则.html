@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 块标签一般作为容器，可以嵌套其他标签。但p不能嵌套div和h等 -->
+    <!-- a标签可以嵌套任意标签，但不能嵌套a标签 -->
+
+    <p>
+        <!-- 当p标签里嵌套div，浏览器会自动补齐p的结束和开始，导致出现两个p -->
+        <div>hfs</div>
+    </p>
+
+    <a href="#">
+        <!-- 当a标签嵌套，浏览器强行使嵌套关系变成并列关系 -->
+        aaaa
+        <a href="#">ggg</a>
+    </a>
+</body>
+</html>

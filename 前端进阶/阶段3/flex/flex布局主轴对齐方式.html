@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 父级：弹性容器 */
+        .box {
+            /* 父盒子添加flex */
+            display: flex;
+
+            /* justify-content: flex-end; */
+
+            /* flex主轴：水平方向 */
+            /* 给父级添加主轴对齐方式 */
+            /* 间距在弹性盒子之间 */
+            /* justify-content: space-between; */
+
+            /* 在弹性盒子两侧添加间距 */
+            /* 即：弹性盒子之间的间距为弹性盒子到弹性容器之间的间距的两倍 */
+            /* justify-content: space-around; */
+
+            /* 子级到父盒子，相邻子级到子级的间距相等 */
+            /* justify-content: space-evenly; */
+
+            /* 居中 */
+            /* justify-content: center; */
+
+
+            height: 200px;
+            border: 1px solid black;
+        }
+        /* 弹性盒子（子级）沿着主轴默认水平方向排列 */
+        .box div{
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- flex布局：简称弹性布局-->
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

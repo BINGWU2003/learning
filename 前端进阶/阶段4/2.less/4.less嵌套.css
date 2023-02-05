@@ -1,0 +1,43 @@
+.father {
+  background-color: red;
+}
+.father .son {
+  background-color: pink;
+}
+/*
+.father {
+    background-color: red;
+}
+.father .son {
+    background-color: pink;
+}
+*/
+.father {
+  background-color: red;
+}
+.father .son {
+  color: pink;
+}
+.father .son:hover {
+  height: 20px;
+}
+.father:hover {
+  width: 10px;
+}
+/*
+.father {
+    background-color: red;
+    }
+    .father .son {
+    color: pink;
+    }
+
+
+.father .son:hover {
+    height: 20px;
+    }
+    
+.father:hover {
+    width: 10px;
+    }
+*/

@@ -1,0 +1,122 @@
+.xtr_body {
+    height: 1460px;
+    background-color: #f6f6f6;
+}
+
+.xtr_body .wrapper {
+    display: flex;
+    height: 1348px;
+    margin-top: 28px;
+    margin-bottom: 84px;
+    justify-content: space-between;
+}
+/* left */
+.xtr_body .wrapper .left {
+    display: flex;
+    flex-wrap: wrap;
+    height: 1348px;
+    width: 228px;
+    justify-content: space-between;
+    background-color: pink;
+}
+
+.xtr_body .wrapper .left .person_info {
+    height: 232px;
+    width: 228px;
+    background-color: white;
+    text-align: center;
+}
+
+.xtr_body .wrapper .left .person_info li img {
+    height: 85px;
+    width: 85px;
+    margin-top: 46px;
+}
+
+
+.xtr_body .wrapper .left .person_info li:nth-child(2){
+    margin-top: 18px;
+    font-size: 18px;
+    font-weight:bold;
+}
+
+.xtr_body .wrapper .left .person_info li:nth-child(3){
+    height: 26px;
+    width: 94px;
+    margin: 12px auto;
+    background-color: #e76e52;
+    border-radius: 13px;
+    
+    color: #f9f9f9;
+    line-height: 26px;
+}
+
+.xtr_body .wrapper .left .person_info li:nth-child(3) img{
+    width: 15px;
+    height: 15px;
+    background-size: 15px 15px;
+    vertical-align: middle;
+    margin-top: 0;
+    margin-bottom: 2px;
+}
+
+
+
+.xtr_body .wrapper .left .person_account {
+    height: 454px;
+    width: 228px;
+    background-color: red;
+}
+
+.xtr_body .wrapper .left .transaction {
+    height: 274px;
+    width: 228px;
+    background-color: red;
+}
+
+.xtr_body .wrapper .left .person_like {
+    height: 196px;
+    width: 228px;
+    background-color: red;
+}
+
+.xtr_body .wrapper .left .help_center {
+    height: 186px;
+    width: 228px;
+    background-color: red;
+}
+
+
+/* right */
+.xtr_body .wrapper .right {
+    display: flex;
+    flex-wrap: wrap;
+    height: 1348px;
+    width: 1000px;
+    align-content: space-between;
+    background-color: red;
+}
+
+.xtr_body .wrapper .right .info{
+    width: 1000px;
+	height: 132px;
+    background-color: pink;
+} 
+
+.xtr_body .wrapper .right .order{
+    width: 1000px;
+	height: 392px;
+    background-color: pink;
+}
+
+.xtr_body .wrapper .right .like_goods {
+    width: 1000px;
+	height: 384px;
+    background-color: pink;
+}
+
+.xtr_body .wrapper .right .history {
+    width: 1000px;
+	height: 384px;
+    background-color: pink;
+}

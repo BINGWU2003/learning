@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: red;
+            font-size: 12px;
+            /* 非控制文字属性 */
+            height: 200px;
+            font-style: italic;
+            
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- 文字控制属性都能继承，即控制文字颜色，大小等 -->
+    <div>
+        父级
+        <p>子级</p>
+    </div>
+
+    <!-- 特殊情况 -->
+    <!-- 如果子级标签的有自己的其他文本属性，则不会继承 -->
+    <div>
+        <!-- 由于a标签默认文本属性颜色为蓝色，此时a标签无法继承红色属性 -->
+        <a href="#">a标签</a>
+        <!-- 由于h1标签字体有默认大小 -->
+        <h1>jdasld</h1>
+    </div>
+    <h1>sf</h1>
+</body>
+</html>

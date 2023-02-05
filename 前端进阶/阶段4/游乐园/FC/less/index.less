@@ -1,0 +1,142 @@
+@import './base.less';
+@import './normalize';
+
+
+//定义html字号变量
+@html_size:37.5rem;
+
+body {
+    background-color: #F0F0F0;
+}
+
+
+.main {
+    margin-bottom: (50/@html_size);
+    
+    //设置banner区
+    .banner {
+        height: (160/@html_size);
+    }
+
+    //title
+    .title {
+        height: (40 / @html_size);
+        padding-left: 16px;
+        line-height: (40 / @html_size);
+        h5 {
+            font-size: 14px;
+            color: #3C3C3C ;
+        }
+    }
+
+    //item
+    .item {
+        margin-bottom: (10/@html_size);
+        .pic {
+            position: relative;
+            height: (160/@html_size);
+            //字体图标
+            i {
+                position: absolute;
+                right: (16/@html_size);
+                top: (16/@html_size);
+                font-size: (24/@html_size);
+            }
+            .active {
+                position: absolute;
+                left: (16/@html_size);
+                top:(-4/@html_size);
+                height: (29/@html_size);
+                width: (68/@html_size);
+                background-image: url(../images/status_active.png);
+                background-size: contain;
+                font-size: (12/@html_size);
+                color: #F0F0F0;
+                line-height: (25/@html_size);
+                text-align: center;
+                //更改图片
+                //停止状态
+                &.off {
+                    background-image: url(../images/status_default.png);
+                }
+            }
+        }
+    }
+
+    //text
+    .text {
+        background-color: #fff;
+        padding: (10/@html_size) (16/@html_size);
+        font-size: (15/@html_size);
+        .top {
+            display: flex;
+            justify-content:space-between;
+            p {
+                height: (44/@html_size);
+                width: (290/@html_size);
+            }
+    
+            span {
+                // margin-top: 10px;
+                color: #FE6249;
+            }
+        }
+        
+        .bottom {
+            display: flex;
+            margin-top: (12/@html_size);
+            .left {
+                margin-right: (15/@html_size);
+                font-size: (11/@html_size);
+                color: #B4B4B4;
+                span {
+                    margin-right: (7/@html_size);
+                    font-size: (11/@html_size);
+                    color: #B4B4B4;
+                }
+            }
+
+            .right {
+                font-size: (11/@html_size);
+                color: #B4B4B4;
+                span {
+                    margin-right: (2/@html_size);
+                    font-size: (11/@html_size);
+                    color: #B4B4B4;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    left:0;
+    bottom:0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    //继承父级宽度
+    width: 100%;
+    height: (50/@html_size);
+    background-color: #FECA49;
+    text-align: center;
+    
+    
+
+    a {
+        color: #D78B09;
+        .iconfont {
+            font-size: (24/@html_size);
+        }
+        h5 {
+            font-family: FZLTXHKM;
+            font-size: (11/@html_size);
+        }
+
+        //当前状态
+        &.current {
+        color: #fff;
+        }
+    }
+}

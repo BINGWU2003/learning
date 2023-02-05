@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 400px;
+            height: 400px;
+            background-color: pink;
+            /* 添加背景图，图片采用平铺方式，填满整个盒子 */
+            background-image: url(../rockstar.jpg);
+            /* 操作背景图 */
+            background-repeat: no-repeat;
+            /* 取值:no-repeat(不平铺)，repeat-x(沿着水平方向平铺)，repeat-y(沿着竖直方向平铺)，repeat */
+            /* 更改背景图的位置 */
+            background-position: center center;
+            /* 左：取值：center，left，right */
+            /* 右：取值：center，top，bottom */
+            /* 取值：正数（图片向下或者向右移动） 负数（图片向上或者向左移动） */
+            background-position: -100px 50px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    </div>
+</body>
+</html>

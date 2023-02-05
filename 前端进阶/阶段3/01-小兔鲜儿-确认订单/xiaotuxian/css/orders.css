@@ -1,0 +1,210 @@
+body {
+    background-color: #f7f7f8;
+}
+/* 公共样式pannel */
+.pannel {
+    margin-bottom: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+/* 主体内容 */
+.main {
+    margin: 12px 11px 0;
+}
+/* 用户信息 */
+.userMsg {
+    display: flex;
+    padding: 15px 0px 15px 11px;
+    text-align: center;
+    align-items: center;
+}
+
+/* location */
+.main .location {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #fff;
+    background-image: linear-gradient(90deg, 
+		#6fc2aa 5%, 
+		#54b196 100%);
+    line-height: 30px;
+}
+/* user */
+.main .user {
+    flex: 1;
+    color: #333333;
+}
+
+.main .user .top {
+    width: 273px;
+    display: flex;
+} 
+.main .user .top h5 {
+    color: #262626;
+    font-size: 15px;
+    /* 最大是三个名字宽度 */
+    width: 55px;
+    height: 24px;
+    line-height: 24px;
+}
+main .user .top p {
+    font-size: 15px;
+}
+
+.main .user .bottom {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: left;
+}
+
+/* more */
+.main .more a{
+    display: block;
+    height: 44px;
+    width: 44px;
+    line-height: 44px;
+}
+
+
+/* 商品 */
+.main .goodsInfo{
+	height: 107px;
+    padding: 11px 0 11px 11px;
+    display: flex;
+}
+/* 图片 */
+.main .goodsInfo .picture {
+    height: 85px;
+    width: 85px;
+    margin-right: 12px;
+}
+/* 商品内容 */
+.main .goodsInfo .info {
+    font-size: 13px;
+    width: 192px;
+    color: #262626;
+}
+/* 中部 */
+.main .goodsInfo .info .center {
+    font-size: 11px;
+    width: 96px;
+    color: #888888;
+    background-color: #f7f7f8;
+    margin: 6px 0px;
+}
+
+.main .goodsInfo .info .center span:nth-child(1){
+    margin-right: 5px;
+
+}
+
+/* 底部内容 */
+.main .goodsInfo .info .bottom {
+    line-height: 16px;
+}
+.main .goodsInfo .info .bottom del{
+    font-size: 9px;
+    color: #999999;
+}
+.main .goodsInfo .info .bottom i {
+    color: #cf4444;
+}
+
+/* num区域 */
+.main .num{
+    display: flex;
+    align-items: center;
+}
+.main .num a{
+    display: block;
+    font-weight: bold;
+    height: 44px;
+    width: 44px;
+    text-align: center;
+    line-height: 44px;
+}
+
+/* 其他信息 */
+.other-info {
+    padding: 15px;
+}
+
+.pannel.other-info div {
+    display: flex;
+    font-size: 13px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #262626;
+}
+
+.pannel.other-info div h5 {
+    font-size: 13px;
+    font-weight: normal;
+}
+.pannel.other-info div:nth-child(2n+1){
+    justify-content: space-between;
+
+}
+
+.pannel.other-info div:nth-child(2) {
+    margin: 29px 0;
+}
+
+.pannel.other-info div:nth-child(2) p {
+    margin-left: 19px;
+    color: #989898;
+}
+
+/* 支付页面 */
+.pay {
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+
+    /* flxe布局 */
+    display: flex;
+    justify-content: space-between;
+    /* 侧轴对齐居中 */
+    align-items: center;
+
+    padding: 0 11px;
+    height: 80px;
+    width: 100%;
+    border-top: 1px solid #ededed;
+
+    font-size: 12px;
+}
+/* 支付：左侧 */
+.pay .left {
+    font-size: 11px;
+    color: #1e1e1e;
+}
+
+.pay .left span{
+    letter-spacing: 1px;
+    color: #cf4444;
+}
+
+.pay .left span i{
+    font-size: 20px;
+}
+
+/* 支付右侧 */
+.pay .right {
+    display: inline-block;
+    width: 91px;
+	height: 35px;
+    background-image: linear-gradient(90deg, 
+		#6fc2aa 5%, 
+		#54b196 100%);
+    font-size: 13px;
+    border-radius: 3px;
+    line-height: 35px;
+}
+
+.pay .right a {
+    color: #ffffff;
+    margin: 0 25px;
+}

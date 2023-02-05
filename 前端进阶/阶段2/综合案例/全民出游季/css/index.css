@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 设置html高度为浏览器高度 */
+html {
+    height: 100%;
+}
+body {
+    /* 设置body高度为htmnl高度 */
+    height: 100%;
+    background: url(./../images/f1_1.jpg) no-repeat center 0;
+    /* 背景图等比例缩放 */
+    background-size: cover;
+}
+
+.cloud img{
+    position: absolute;
+    left: 50%;
+    top:0;
+}
+
+.cloud img:nth-child(1) {
+    margin-left: -300px;
+    top:20px;
+    animation: 1s cloud infinite alternate;
+}
+
+.cloud img:nth-child(2) {
+    margin-left: 400px;
+    top:100px;
+    animation: 1s cloud infinite alternate 0.3s;
+}
+.cloud img:nth-child(3) {
+    margin-left: -550px;
+    top:200px;
+    animation: 1s cloud infinite alternate 0.5s;
+}
+
+/* 云彩动画 */
+@keyframes cloud {
+    to {
+        transform: translate(12px);
+    }
+}
+
+.ballon img{
+    position: absolute;
+    top: 30px;
+    margin-left: 382px;
+    animation: 1s ballon infinite alternate;
+}
+
+/* 气球动画 */
+@keyframes ballon {
+    to {
+        transform: translateY(20px);
+    }
+}
+
+/* tips */
+.tips img{
+    position: absolute;
+    left: 50%;
+    top:0;
+}
+
+.tips img:nth-child(1) {
+    margin-left: -400px;
+    top:550px;
+    animation: 1s tips infinite alternate;
+}
+
+.tips img:nth-child(2) {
+    margin-left: -200px;
+    top:550px;
+    animation: 1s tips infinite alternate 0.3s;
+}
+
+.tips img:nth-child(3) {
+    margin-left: 0x;
+    top:550px;
+    animation: 1s tips infinite alternate 0.1s;
+}
+
+.tips img:nth-child(4) {
+    margin-left: 200px;
+    top:550px;
+    animation: 1s tips infinite alternate 0.7s;
+}
+
+/* tips动画 */
+@keyframes tips {
+    to {
+        transform: translateY(20px);
+    }
+}

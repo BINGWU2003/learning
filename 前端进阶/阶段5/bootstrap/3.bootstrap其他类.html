@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.min.css">
+    <style>
+        .box1 {
+            background-color: pink;
+            height: 50px;
+        }
+
+        .box2 {
+            background-color: green;
+            height: 50px;
+        }
+        .box3 {
+            background-color: red;
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1 container">
+        1
+    </div>
+
+
+    <!-- 使用row -->
+    <div class="box2 container">
+        <!-- 使用row后，左外边距为-15px -->
+        <div class="row">
+            2
+        </div>
+    </div>
+
+    <!-- 使用container-fluid -->
+    <!-- 宽度继承父级宽度，左右内边距为15px -->
+    <div class="box3 container-fluid">
+        3
+    </div>
+
+    <div class="glyphicon glyphicon-envelope"></div>
+</body>
+</html>

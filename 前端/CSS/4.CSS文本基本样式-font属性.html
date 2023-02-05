@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* font的复合属性 */
+        /* font: style weight size famliy */
+        /* 属性顺序不能改变,只能省略前两个，省略后相当于默认值，size和family必须有*/
+        p {
+            /* 根据层叠样式原则，上面的normal属性被覆盖，导致无法生效 */
+            font-style: normal;
+            font: italic 700 30px 宋体;
+        }
+    </style>
+</head>
+<body>
+    <p>jakdha</p>
+</body>
+</html>

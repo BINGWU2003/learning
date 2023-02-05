@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 添加flex */
+            display: flex;
+
+            height: 400px;
+            width: 400px;
+            border:1px solid black;
+
+        }
+        .box div {
+            margin: 0 10px;
+            background-color: pink;
+            height: 100px;
+        }
+        
+        .box div:nth-child(1){
+            width: 40px;
+        }
+
+        .box div:nth-child(2){
+            /* 剔除1，3盒子，占用父级剩下的1份 */
+            /* 比例问题：
+            剔除掉没有设置flex的盒子，所有盒子的margin之后，所剩下的部分，
+            用来分割比例大小
+            */
+            padding: 0 10px;
+            flex: 1;
+            margin: 0 20px;
+        }
+
+        .box div:nth-child(3){
+            /* 由于盒子2的flex为1，此时把弹性容器的剩余部分（剔除盒子）分为4份，盒子3占3份，盒子1占一份 */
+            flex:3;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>

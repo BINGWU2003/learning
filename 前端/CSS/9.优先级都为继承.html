@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p{
+            color: red;
+        }
+        .father {
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <p>
+            <!-- p继承div的father，再span继承p，2次继承 -->
+            <!-- div p选择器直接选中p，span继承p的属性 ，1次继承-->
+            <!-- 继承次数最少的生效 -->
+            <span>font</span>
+        </p>
+    </div>
+</body>
+</html>

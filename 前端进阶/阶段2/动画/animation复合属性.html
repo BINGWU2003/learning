@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+            /* 
+                animation:动画名称 动画时长 速度曲线 延迟时间 重复次数 动画方向 执行完毕状态 ; 
+                动画名称和动画时间必须赋值
+                复合属性取值不分先后
+                如果有两个时间值，第一个表示动画时长，第二个表示延迟时间
+            */
+
+            /* 3:代表重复3次 */
+            /* infinite无限重复 */
+            /* 速度曲线：liner匀速等 */
+            /* 动画方向：alternate反复等 */
+            /* 执行完毕的状态:backwards（停留在最初状态） fowrads(停留在最终状态) */
+            animation: 2s change linear alternate forwards;
+        }
+        @keyframes change {
+            from{
+                width: 200px;
+            }
+            to {
+                width: 600px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

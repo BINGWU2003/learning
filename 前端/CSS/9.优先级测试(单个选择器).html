@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #color {
+            color:blue;
+        }
+        .color {
+            color:aqua;
+        }
+        div {
+            /* !important 生效 */
+            color: yellow !important;
+        }
+        body {
+
+            /* !important不生效 */
+            color: red !important;
+        }
+        /* 继承选择器不推荐使用！important，自己的有的样式无法继承父级 */
+    </style>
+</head>
+<body>
+    <!-- 单个选择器 -->
+    <!-- 优先级：继承 < 通配符选择器 < 标签选择器 < 类选择器 < id选择器 < 行内样式<！important -->
+    <!-- 优先级高的会覆盖优先级低的 -->
+    <div class="color" id="color" style="color: pink;">div</div>
+</body>
+</html>

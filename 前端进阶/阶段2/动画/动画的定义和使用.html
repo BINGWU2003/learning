@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+
+            /* 使用动画 */
+            animation: change1 4s;
+        }
+
+        /* 动画定义1 */
+        /*
+            change是定义的动画名称
+         */
+        @keyframes  change {
+            from {
+                width: 400px;
+            }
+            to {
+                width: 800px;
+            }
+        }
+
+        /* 动画定义2 */
+        /* 
+            百分比代表动画占用时长
+        */
+        @keyframes change1 {
+            40% {
+                width: 200px;
+            }
+            50% {
+                width: 300px;
+                height: 300px;
+            }
+            100% {
+                width: 400px;
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

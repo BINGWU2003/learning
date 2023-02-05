@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //内置对象。js自带的。
+        // Math数学对象，不是构造函数。不需要new，直接调用里面的属性和方法
+        console.log(Math.PI);
+        console.log(Math.max(0, 12, 111, ));
+        console.log(Math.max(0, 12, 'aaaa')); // NaN
+
+        function getRandomIntInclusive(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min + 1)) + min; //含最大值，含最小值
+        }
+        var arr = ['a', 'b', 'c', 'd'];
+        console.log(arr.length);
+        console.log(arr[getRandomIntInclusive(0, arr.length - 1)]);
+
+        //Date对象  是构造函数，必须使用new来创建Date对象
+        var date = new Date();
+        console.log(date); // 如果没用参数。则返回当前系统时间
+        //Date 参数的写法  数字型  2023，1，1  字符型  '2023-1-1 20:20:20'
+        var date1 = new Date(2023, 1, 1);
+        var date2 = new Date('2023-1-1 20:20:20'); // 输出的月份比参数大一个月
+        console.log(date1);
+        console.log(date2);
+        console.log(date2.getFullYear()); // 获取年份
+        console.log(date2.getMonth() + 1); // 获取月份比当前小1，要额外＋1
+        console.log(date2.getDay()); //周日返回0  周1~周6返回1~6
+        // 获取当前时间距离1970年1月1号过了多少毫秒
+        var date3 = new Date();
+        console.log(date3.valueOf());
+        console.log(date3.getTime());
+        var date4 = +new Date();
+        console.log(date4); // 返回总毫秒数
+        // h5新增的获取总毫秒数
+        console.log(Date.now());
+
+
+        //Array对象
+        var arr = new Array(); //空数组
+        console.log(arr);
+        var arr = new Array(2); //数组长度为2的空数组
+        console.log(arr);
+        var arr = new Array(2, '2'); //数组长度为2，数组元素为2，'2'
+        console.log(arr);
+        // 检测数组  instanceof  
+        var arr1 = [];
+        console.log(arr1 instanceof Array); // true
+        console.log(arr1 instanceof String);// false
+        // Array.isArray(参数);
+        console.log(Array.isArray(arr1));
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

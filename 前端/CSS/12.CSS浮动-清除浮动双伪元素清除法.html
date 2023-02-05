@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 浮动的影响 */
+        /* 当父级元素的子元素全部浮动而且父级元素的高不存在时，父元素的同级元素会向上移动 */
+        /* 清除该影响：双伪元素*/
+        .box {
+            margin: 0 auto;
+            width: 700px;
+            background-color: red;
+        }
+        .left {
+            /* 转化成行内块或者浮动都行 */
+            float: left;
+            height: 200px;
+            width: 300px;
+            background-color: pink;
+        }
+        .right {
+            float: right;
+            height: 200px;
+            width: 390px;
+            background-color: green;
+        }
+        .bottom {
+            height: 100px;
+            background-color: skyblue;
+        }
+        /* .clear::before的加入是为了解除塌陷问题 */
+        .clearfix::after, .clearfix::before{
+            content: "";
+            display: table;
+        }
+        .clearfix::after {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="box clearfix">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+    <div class="bottom"></div>
+</body>
+</html>
+</body>
+</html>

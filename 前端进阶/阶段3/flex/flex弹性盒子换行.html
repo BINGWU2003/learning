@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+            /* flex布局里弹性盒子宽高会随着弹性容器的宽度变化而变化 */
+            /* 弹性盒子默认排列是不换行 */
+
+            /* 换行 */
+            flex-wrap: wrap;
+
+            /*行对齐方式 */ 
+            /* align-content:space-around; */
+            
+
+            height: 300px;
+            border: 1px solid black;
+        }
+        .box div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
+</html>

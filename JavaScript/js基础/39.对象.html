@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 对象：属性 + 方法
+        //属性：事物的特征   方法：事物的行为
+        //创建对象
+        // 1. 通过字面量 {} 创建对象
+        //var obj = {};
+        var obj = {
+            name: 'a',
+            age: 18,
+            // 使用匿名函数
+            say: function () {
+                console.log('hi');
+            }
+        }
+        //(1) 里面的属性或者方法采用键值对    键  属性名 ： 值  属性值
+        //(2) 多个属性和方法用逗号隔开
+        //(3) 方法是用匿名函数
+        //2.使用对象   
+        //(1)  对象名.属性名
+        console.log(obj.age);
+        //(2)  对象名['属性名']
+        console.log(obj['age']);
+        //(3)   使用方法  对象名.方法名
+        obj.say();
+
+        //3.利用new Object() 创建对象
+        var obj1 = new Object();// 创建一个空对象
+        // 追加属性和方法
+        obj1.uname = 'abc';
+        obj1.age = 20;
+        obj1.f = function() {
+            console.log('aaa');
+        }
+        console.log(obj1.uname);
+        console.log(obj1.age);
+        obj1.f();
+        //利用构造函数创建对象
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

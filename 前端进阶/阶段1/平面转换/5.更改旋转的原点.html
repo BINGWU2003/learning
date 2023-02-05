@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+            width: 200px;
+            margin: 0 auto;
+            /* 过渡 */
+            transition: all 1s;
+            /* 默认旋转点是盒子中心 */
+            /* 转换原点 */
+            /* 属性值：left，right，top，bottom，center */
+            /* 旋转点为左下角 */
+            transform-origin: left bottom;
+        }
+        img:hover{
+            /* 旋转属性 */
+            /* 单位deg（度） */
+            /* 
+                正数：顺时针
+                负数：逆时针
+             */
+            transform: rotate(-360deg);
+
+            
+        }
+    </style>
+</head>
+<body>
+    <img src="./案例1-双开门/images/fm.jpg" alt="">
+</body>
+</html>
