@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="box">box1</div>
+    <div class="box">box2</div>
+    <ul id="ul_Id">
+        <li>123</li>
+        <li>456</li>
+    </ul>
+    <script>
+        // 通过类名来获取元素
+        // 返回的也是伪数组
+        var elm1 = document.getElementsByClassName('box');
+        console.log(elm1);
+        // 返回指定选择器的第一个元素
+        var elm2 = document.querySelector('.box');
+        console.log(elm2);
+        //返回id选择器  #+id
+        var elm3 = document.querySelector('#ul_Id');
+        console.log(elm3);
+        var elm4 = document.querySelector('li');
+        console.log(elm4); // 返回第一个li元素
+        // 返回指定选择器的所有元素  和getElementsByClassName差不多
+        var elm5 = document.querySelectorAll('.box');
+        console.log(elm5);
+    </script>
+</body>
+
+</html>
