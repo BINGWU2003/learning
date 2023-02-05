@@ -7,6 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <div id="time">
+        2023-2-5
+    </div>
+    <script>
+        // 网页执行顺序是从上往下执行，所以script写在下面
+        // 通过id来获取元素
+        // 返回元素对象
+        var t = document.getElementById('time');
+        console.log(t);
+        console.log(typeof t); // object
+        // 查看元素的属性和方法
+        console.dir(t);
+    </script>
 </body>
 </html>
